@@ -35,4 +35,3 @@ const rangeInput = function(e) {
 };
 
 range.addEventListener('input', rangeInput);
-
