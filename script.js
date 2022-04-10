@@ -25,7 +25,7 @@ const rangeInput = function(e) {
 };
 
 eBtn.style.display = 'none';
-spanRange.textContent = range.value;
+spanRange.textContent = range.value + '%';
 
 text.addEventListener('input', textInput);
 btn.addEventListener('click', clickBtn);
