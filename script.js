@@ -5,6 +5,7 @@ const text = document.querySelector('#text');
 const square = document.querySelector('#square');
 const eBtn = document.querySelector('#e_btn');
 const range = document.querySelector('#range');
+const spanRange = document.querySelector('#range-span');
 const circle = document.querySelector('#circle');
 let color;
 
@@ -18,11 +19,14 @@ const clickBtn = function() {
 
 const rangeInput = function(e) {
     let size = e.target.value + '%';
+    spanRange.textContent = size;
     circle.style.height = size;
     circle.style.width = size;
 };
 
+eBtn.style.display = 'none';
+spanRange.textContent = range.value;
+
 text.addEventListener('input', textInput);
 btn.addEventListener('click', clickBtn);
-eBtn.style.display = 'none';
 range.addEventListener('input', rangeInput);
